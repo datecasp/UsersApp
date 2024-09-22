@@ -1,7 +1,7 @@
 @if(usersList) {
 <div class="d-flex justify-content-between">
-  <h1>User data:</h1>
-  <div>
+  <h1 class="ms-3">User data:</h1>
+  <div class="me-4 mt-2">
     <label for="nameFilter">Filter users by name:</label>
     <input type="text" id="nameFilter" #filter />
     <button (click)="FilterByName(filter.value)">Filter</button>
