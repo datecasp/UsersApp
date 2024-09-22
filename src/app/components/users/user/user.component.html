@@ -1,12 +1,6 @@
-<div class="d-flex p-2 justify-content-between">
-  <h4 class="me-3">Id : {{ user?.Id }}</h4>
-  <h3 class="me-5">
-    {{ user?.Nombre }}
-  </h3>
-  <h4 class="me-4">
-    {{ user?.CorreoElectronico }}
-  </h4>
-  <h4>
-    {{ user?.Telefono }}
-  </h4>
+<div class="grid-container" >
+     <div class="grid-item">Id : {{ user?.Id }}</div>
+    <div class="grid-item"> {{ user?.Nombre }}</div>
+    <div class="grid-item"> {{ user?.CorreoElectronico }}</div>
+    <div class="grid-item"> {{ user?.Telefono }}</div>
 </div>

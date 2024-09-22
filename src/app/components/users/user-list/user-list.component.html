@@ -1,18 +1,14 @@
 @if(usersList) {
 <div class="d-flex justify-content-between">
-    <h1>User data:</h1>
-    <div>
-        <label for="nameFilter">Filter users by name:</label>
-        <input type="text" id="nameFilter" #filter />
-        <button (click)="FilterByName(filter.value)">Filter</button>
-    </div>
+  <h1>User data:</h1>
+  <div>
+    <label for="nameFilter">Filter users by name:</label>
+    <input type="text" id="nameFilter" #filter />
+    <button (click)="FilterByName(filter.value)">Filter</button>
+  </div>
 </div>
 @for (user of usersList | userFilter : pipeFilter; track $index) {
 <app-user [user]="user"></app-user>
-}
-<label for="nameFilter">Filter users by name:</label>
-<input type="text" id="nameFilter" #filter />
-<button (click)="FilterByName(filter.value)">Filter</button>
-} @else {
+} } @else {
 <h2>No hay usuarios disponibles</h2>
 }
